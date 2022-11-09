@@ -63,7 +63,7 @@ const Home: NextPage<{ toughts: ToughtPROPS[] }> = ({ toughts }) => {
         {AllToughts.map((tought: ToughtPROPS) => (
           <div key={tought.id} className="flex flex-col gap-1 border-b-[1px] w-full text-left px-2 py-1 border-b-[#333] shadow-md">
             <p className="text-xl">
-              <span>"</span> {tought.title} <span>"</span>
+              <span>&quot;</span> {tought.title} <span>&quot;</span>
             </p>
             <p>
               <span className="mr-2">por:</span>

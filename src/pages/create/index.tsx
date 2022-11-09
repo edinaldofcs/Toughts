@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { FormEvent, useState } from "react";
 import Input from "../../components/input";
@@ -41,7 +42,7 @@ const Create: NextPage = () => {
 
   return (
     <div className="w-full flex flex-col py-4 px-12 gap-4">
-      <a href="/dashboard">Voltar</a>
+      <Link href="/dashboard">Voltar</Link>
       <h1 className="border-l-4 px-1 border-amber-600 text-lg ">Criando pensamento</h1>
       <form onSubmit={(e)=>handleSubmit(e)} className="flex gap-4 flex-col">
         <label htmlFor="search2" className="cursor-pointer">Pensamento:</label>

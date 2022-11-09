@@ -33,9 +33,9 @@ const Header: NextPage = () => {
   return (
     <nav className="px-8 py-2 flex justify-between items-center border-b-2 border-b-amber-700">
       <div className="cursor-pointer">
-        <a href="/">
+        <Link href="/">
           <Image src={logo} alt="toughts" width={40} height={40} />
-        </a>
+        </Link>
       </div>
 
       <ul className="flex gap-6 ">
